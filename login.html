@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - The Alpha Trading Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0iIzFhMWEyZSIvPgo8cGF0aCBkPSJNMTIgMTJIMjhWMjhIMTJWMjhaIiBzdHJva2U9IiMwMDdCRkYiIHN0cm9rZS13aWR0aD0iMiIvPgo8cGF0aCBkPSJNMTggOEwyNCAxTDMyIDgiIHN0cm9rZT0iIzAwN0JGRiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=" alt="Logo The Alpha" class="logo-img">
+                <span class="logo-text">THE ALPHA</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="about.html" class="nav-link">Tentang</a></li>
+                <li><a href="team.html" class="nav-link">Tim</a></li>
+                <li><a href="services.html" class="nav-link">Layanan</a></li>
+                <li><a href="contact.html" class="nav-link">Kontak</a></li>
+                <li><button class="login-btn" onclick="location.href='login.html'">Masuk</button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bagian Login -->
+    <section class="login-section">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-form">
+                    <h2>Masuk ke Akun Anda</h2>
+                    <p>Selamat datang kembali! Silakan masukkan kredensial Anda.</p>
+                    
+                    <form class="auth-form">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" required placeholder="Masukkan username Anda">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required placeholder="Masukkan password Anda">
+                        </div>
+                        
+                        <div class="form-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="remember">
+                                <span>Ingat saya</span>
+                            </label>
+                            <a href="forgot-password.html" class="forgot-link">Lupa password?</a>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Masuk</button>
+                    </form>
+                    
+                    <div class="login-divider">
+                        <span>Atau</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button class="btn-social google-btn">
+                            <i class="fab fa-google"></i>
+                            Masuk dengan Google
+                        </button>
+                        <button class="btn-social telegram-btn">
+                            <i class="fab fa-telegram"></i>
+                            Masuk dengan Telegram
+                        </button>
+                    </div>
+                    
+                    <p class="register-link">
+                        Belum punya akun? <a href="signup.html">Daftar di sini</a>
+                    </p>
+                </div>
+                
+                <div class="login-info">
+                    <h3>Keuntungan Bergabung</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Akses ke sinyal trading eksklusif</li>
+                        <li><i class="fas fa-check"></i> Komunitas trader profesional</li>
+                        <li><i class="fas fa-check"></i> Analisis pasar real-time</li>
+                        <li><i class="fas fa-check"></i> Dukungan 24/7</li>
+                        <li><i class="fas fa-check"></i> Tools trading canggih</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 The Alpha Trading Group. Dibuat oleh Awen. Semua hak dilindungi.</p>
+            <p>Anggota: Awen, Yongki, Deo, Noven, Reno</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

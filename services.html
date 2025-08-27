@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - The Alpha Trading Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0iIzFhMWEyZSIvPgo8cGF0aCBkPSJNMTIgMTJIMjhWMjhIMTJWMjhaIiBzdHJva2U9IiMwMDdCRkYiIHN0cm9rZS13aWR0aD0iMiIvPgo8cGF0aCBkPSJNMTggOEwyNCAxTDMyIDgiIHN0cm9rZT0iIzAwN0JGRiIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=" alt="Logo The Alpha" class="logo-img">
+                <span class="logo-text">THE ALPHA</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="about.html" class="nav-link">Tentang</a></li>
+                <li><a href="team.html" class="nav-link">Tim</a></li>
+                <li><a href="services.html" class="nav-link">Layanan</a></li>
+                <li><a href="contact.html" class="nav-link">Kontak</a></li>
+                <li><button class="login-btn" onclick="openLoginPopup()">Masuk</button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bagian Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Layanan <span class="highlight">The Alpha</span></h1>
+            <p>Solusi trading profesional untuk setiap trader</p>
+        </div>
+    </section>
+
+    <!-- Konten Layanan -->
+    <section class="services-content">
+        <div class="container">
+            <h2 class="section-title">Apa yang Kami Tawarkan</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-signal"></i>
+                    <h3>Sinyal Trading</h3>
+                    <p>Dapatkan sinyal trading real-time dengan level entry, stop-loss, dan take-profit yang tepat. Sinyal kami mencakup forex, crypto, dan pasar saham.</p>
+                    <ul>
+                        <li>3-5 sinyal harian</li>
+                        <li>Analisis detail dengan chart</li>
+                        <li>Panduan manajemen risiko</li>
+                        <li>Update real-time</li>
+                    </ul>
+                    <button class="btn-primary" onclick="openSignalsPopup()">Dapatkan Sinyal</button>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Pendidikan Trading</h3>
+                    <p>Program pendidikan trading komprehensif yang dirancang untuk semua tingkat keahlian. Belajar dari trader ahli kami.</p>
+                    <ul>
+                        <li>Kursus pemula hingga lanjutan</li>
+                        <li>Webinar langsung</li>
+                        <li>Mentoring satu-satu</li>
+                        <li>Perpustakaan strategi trading</li>
+                    </ul>
+                    <button class="btn-primary" onclick="openEducationPopup()">Pelajari Lebih Lanjut</button>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Analisis Pasar</h3>
+                    <p>Analisis pasar harian dan laporan trading mingguan untuk membuat Anda selalu unggul di pasar.</p>
+                    <ul>
+                        <li>Update pasar harian</li>
+                        <li>Laporan trading mingguan</li>
+                        <li>Analisis sentimen pasar</li>
+                        <li>Wawasan kalender ekonomi</li>
+                    </ul>
+                    <button class="btn-primary" onclick="openAnalysisPopup()">Lihat Analisis</button>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Akses Komunitas</h3>
+                    <p>Bergabunglah dengan komunitas trading eksklusif kami dengan 500+ trader aktif yang berbagi wawasan dan strategi.</p>
+                    <ul>
+                        <li>Discord/Telegram pribadi</li>
+                        <li>Sesi trading langsung</li>
+                        <li>Tanya jawab dengan ahli</li>
+                        <li>Diskusi trading</li>
+                    </ul>
+                    <button class="btn-primary" onclick="openCommunityPopup()">Bergabung Komunitas</button>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Manajemen Risiko</h3>
+                    <p>Strategi manajemen risiko profesional untuk melindungi modal Anda dan memaksimalkan pengembalian.</p>
+                    <ul>
+                        <li>Optimisasi portofolio</li>
+                        <li>Kalkulator ukuran posisi</li>
+                        <li>Analisis risk-reward</li>
+                        <li>Manajemen drawdown</li>
+                    </ul>
+                    <button class="btn-primary" onclick="openRiskPopup()">Dapatkan Tools</button>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Dukungan 24/7</h3>
+                    <p>Dukungan sepanjang waktu dari tim ahli kami kapan pun Anda membutuhkan bantuan.</p>
+                    <ul>
+                        <li>Dukungan chat langsung</li>
+                        <li>Dukungan email</li>
+                        <li>Konsultasi video</li>
+                        <li>Bantuan darurat</li>
+                    </ul>
+                    <button class="btn-primary" onclick="openSupportPopup()">Hubungi Dukungan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 The Alpha Trading Group. Dibuat oleh Awen. Semua hak dilindungi.</p>
+            <p>Anggota: Awen, Yongki, Deo, Noven, Reno</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
